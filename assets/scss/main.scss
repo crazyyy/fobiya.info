@@ -1,0 +1,44 @@
+@import 'style';
+@import 'style(1)';
+@import 'styles';
+@import 'public';
+@import 'fonts_cnt';
+/* @import 'lite'; */
+@import 'ui_common';
+@import 'widget_community';
+@import 'ui_common';
+
+
+
+    #spu-1853 {
+        background-color: #ffffff;
+        color: #333;
+        width: 610px;
+    }
+
+    #spu-bg-1853 {
+        opacity: 0;
+    }
+
+    .slider_block {
+      .bx-wrapper {
+        .bx-viewport {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+          height: 403px;
+          .slider {
+            width: 2150%;
+            position: relative;
+            transition-duration: 0s;
+            transform: translate3d(-5040px, 0px, 0px);
+            li {
+              float: left;
+              list-style: none;
+              position: relative;
+              width: 840px;
+            }
+          }
+        }
+      }
+    }
