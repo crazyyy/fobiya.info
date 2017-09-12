@@ -1,10 +1,16 @@
 <?php get_header(); ?>
-  <article>
 
-    <h1 class="ctitle"><?php _e( 'Latest Posts', 'wpeasy' ); ?></h1>
+  <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
+
+  <div class="content_left clearfix">
+
+    <p class="article_head"><?php _e( 'Latest Posts', 'wpeasy' ); ?></p>
+
     <?php get_template_part('loop'); ?>
     <?php get_template_part('pagination'); ?>
 
-  </article>
-<?php get_sidebar(); ?>
+  </div><!-- content_left clearfix -->
+
+  <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
