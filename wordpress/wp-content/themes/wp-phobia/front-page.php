@@ -28,24 +28,13 @@
       <a href="http://fobiya.info/spisok-fobij ">Все фобии</a>
     </div>
     <div class="fobias_3x clearfix ">
-      <a href="http://fobiya.info/strah-zhivotnyh/arahnofobiya " class="fobia_item ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_1.jpg " alt=" "> <span class="fi_name ">Арахнофобия</span> <span class="fi_descr ">Страх пауков</span> </a>
-      <a href="http://fobiya.info/strah-situatsij/akrofobiya " class="fobia_item ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_2.jpg " alt=" "> <span class="fi_name ">Акрофобия</span> <span class="fi_descr ">Страх высоты</span> </a>
-      <a href="http://fobiya.info/strah-prostranstva/klaustrofobiya " class="fobia_item fi_right ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_3.jpg " alt=" "> <span class="fi_name ">Клаустрофобия</span> <span class="fi_descr ">Страх замкнутого пространства</span> </a>
-      <a href="http://fobiya.info/strah-lyudej/nekrofobiya " class="fobia_item ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_4.jpg " alt=" "> <span class="fi_name ">Некрофобия</span> <span class="fi_descr ">Страх перед умершими</span> </a>
-      <a href="http://fobiya.info/strah-dejstvij/aerofobiya " class="fobia_item ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_5.jpg " alt=" "> <span class="fi_name ">Аэрофобия</span> <span class="fi_descr ">Страх полетов</span> </a>
-      <a href="http://fobiya.info/strah-situatsij/niktofobiya " class="fobia_item fi_right ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_6.jpg " alt=" "> <span class="fi_name ">Никтофобия</span> <span class="fi_descr ">Страх темноты</span> </a>
-      <a href="http://fobiya.info/strah-zhivotnyh/gerpetofobiya " class="fobia_item ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_7.jpg " alt=" "> <span class="fi_name ">Герпетофобия</span> <span class="fi_descr ">Страх пресмыкающихся</span> </a>
-      <a href="http://fobiya.info/strah-situatsij/dentofobiya " class="fobia_item ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_8.jpg " alt=" "> <span class="fi_name ">Дентофобия</span> <span class="fi_descr ">Страх стоматолога</span> </a>
-      <a href="http://fobiya.info/strah-veshhestv/gemofobiya " class="fobia_item fi_right ">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/fobia_item_9.jpg " alt=" "> <span class="fi_name ">Гемофобия</span> <span class="fi_descr ">Страх вида крови</span> </a>
+      <?php if( have_rows('top', 46) ): while ( have_rows('top', 46) ) : the_row(); ?>
+        <a href="<?php the_sub_field('link'); ?>" class="fobia_item ">
+          <img src="<?php $image = get_sub_field('image'); echo $image['url']; ?>" alt="<?php the_sub_field('title'); ?> <?php the_sub_field('description'); ?>">
+          <span class="fi_name "><?php the_sub_field('title'); ?></span>
+          <span class="fi_descr "><?php the_sub_field('description'); ?></span>
+        </a>
+      <?php endwhile; endif; ?>
     </div>
 
   </div><!-- content_left clearfix -->

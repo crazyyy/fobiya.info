@@ -3216,7 +3216,7 @@ a.bx-prev:hover, a.bx-next:hover {
 
 .syndroms_right {
   margin-bottom: 15px;
-  padding: 25px 25px 15px;
+  padding: 0 25px 15px;
 }
 
 .syndroms_right .r_head,
@@ -3415,7 +3415,7 @@ a.bx-next {
   margin: 0 7px 26px 0;
 }
 
-.fi_right {
+.fobia_item:nth-child(3n) {
   margin-right: 0;
 }
 

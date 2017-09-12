@@ -412,7 +412,7 @@ a {
 
 .syndroms_right {
   margin-bottom: 15px;
-  padding: 25px 25px 15px;
+  padding: 0 25px 15px;
   .r_head,
   .r_head_2 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -649,11 +649,12 @@ a {
   width: 271px;
   height: 258px;
   margin: 0 7px 26px 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.fi_right {
-  margin-right: 0;
-}
+
 
 .fi_name {
   font-family: 'Roboto Condensed', sans-serif;

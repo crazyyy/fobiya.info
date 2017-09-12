@@ -1,24 +1,12 @@
 <div class="content_right">
   <div class="right_articles clearfix ">
 
-
-<div class="syndroms_right">
+    <div class="syndroms_right">
       <p class="r_head">Виды депрессий</p>
-      <div class="menu-vidy-depressij-container"><ul id="menu-vidy-depressij-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-713"><a href="http://depressia.info/vidy-depressiy/bipolyarnaya-depressiya/">Биполярная депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-714"><a href="http://depressia.info/vidy-depressiy/bolshaya-depressiya/">Большая депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716"><a href="http://depressia.info/vidy-depressiy/malaya-depressiya/">Малая депрессия (дистимия)</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-733"><a href="http://depressia.info/vidy-depressiy/tsiklotimiya/">Циклотимия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-722"><a href="http://depressia.info/vidy-depressiy/sezonnoe-affektivnoe-rasstrojstvo/">Сезонное расстройство</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-862"><a href="http://depressia.info/vidy-depressiy/osennyaya-depressiya/">Осенняя депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-734"><a href="http://depressia.info/vidy-depressiy/endogennaya-depressiya/">Эндогенная депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-719"><a href="http://depressia.info/vidy-depressiy/psihogennaya-depressiya/">Психогенная депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-721"><a href="http://depressia.info/vidy-depressiy/reaktivnaya-depressiya/">Реактивная депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-717"><a href="http://depressia.info/vidy-depressiy/nevroticheskaya-depressiya/">Невротическая депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720"><a href="http://depressia.info/vidy-depressiy/psihoticheskaya-depressiya/">Психотическая депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://depressia.info/vidy-depressiy/atipichnaya-depressiya/">Атипичная депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-813"><a href="http://depressia.info/maskirovannaya-depressiya/">Маскированная депрессия</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="http://depressia.info/vidy-depressiy/alkogolnaya-depressiya/">Алкогольная депрессия</a></li>
-</ul></div>    </div>
+      <div class="menu-vidy-depressij-container">
+        <?php wpeSideNav(); ?>
+      </div>
+    </div>
 
     <div class="ra_head_links clearfix ">
       <a href="#" class="current" id="popartlink">популярные </a> <a href="#" id="newartlink">Новые  статьи</a>
