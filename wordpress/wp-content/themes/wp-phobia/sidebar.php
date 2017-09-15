@@ -2,7 +2,7 @@
   <div class="right_articles clearfix ">
 
     <div class="syndroms_right">
-      <p class="r_head">Виды депрессий</p>
+      <p class="r_head">Виды фобий</p>
       <div class="menu-vidy-depressij-container">
         <?php wpeSideNav(); ?>
       </div>

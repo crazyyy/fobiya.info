@@ -25,7 +25,7 @@
 
     <div class="fob_line ">
       <p>ТОП ФОБИЙ по популярности</p>
-      <a href="http://fobiya.info/spisok-fobij ">Все фобии</a>
+      <a href="<?php echo home_url(); ?>/vidy-fobij-klassifikacija/">Все фобии</a>
     </div>
     <div class="fobias_3x clearfix ">
       <?php if( have_rows('top', 46) ): while ( have_rows('top', 46) ) : the_row(); ?>
